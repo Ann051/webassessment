@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: rgb(42, 42, 99); /* This ensures the background turns blue */
+    font-weight: 600;
+}
+
+.nav-link1 {
+    color: white !important; /* Force white text for nav-links */
+}
+.nav-link1:hover {
+    color: yellow !important; /* Force white text for nav-links */
+}
+.max-auto
+{
+    margin-right:200px;
+}
+
+.salomon-link {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Apply a different font */
+    font-weight: bold;
+    font-size: 1.5rem;
+     margin-right:100px;/* Make it slightly larger */
+}
+
+.bi-heart, .bi-person, .bi-shop {
+    fill: white;
+}
+
+
+
+.bi1:hover {
+    stroke: yellow; /* Change the outline color to yellow on hover */
+    fill: none; /* Optional: If you want to keep the inside of the icon transparent */
+}
+
+
+.flag-icon img {
+    margin-left: 10px;
+}
+
+.second
+{
+    border:0.01px solid black;
+}
+
+.search
+{
+width:550px;
+}
+.badge
+{
+margin-left:5px;
+background-color:yellow;
+}
+.badge:hover
+{
+background-color:yellow;
+}
+
+.divMade
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:201px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.card1 {
+    display: flex;
+    justify-content: center; /* This will center the cards horizontally */
+    align-items: center; /* This will center the cards vertically if needed */
+    flex-wrap: nowrap; /* Prevent the cards from wrapping to the next line */
+    gap: 20px; /* Adds space between cards */
+    margin: 20px 0; /* Adds some margin to the container */
+}
+
+.card {
+    flex: 0 1 12rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Creates a shadow effect */
+    transition: transform 0.3s ease-in-out; /* Ensures the card maintains a fixed width */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarges the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increases shadow on hover */
+}
+
+.imgCard
+{
+height:160px;
+width: 190px;
+}
+
+.text
+{
+font-weight: 600;
+text-align: center;
+}
+
+/* Spacing for the "fourth" section */
+.fourth {
+    margin-top: 100px; /* Adds space between this section and the one above */
+}
+.card3
+{
+    height:190px;
+}
+
+/* Grid layout for cards in the fourth section */
+/* .divMade2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+} */
+
+.divMade2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 20px; /* Space between cards */
+    justify-items: center;
+    padding: 20px;
+}
+.card-carousel-wrapper {
+    display: flex; /* Flex container */
+    justify-content: space-between; /* Space between the card and the carousel */
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Space between card and carousel */
+    width: 100%; /* Make sure it uses full width */
+    margin-top: 20px;
+}
+.carousel-item
+{
+    width:732px;
+    height: 385px;
+    border-radius: 50px;
+
+}
+/* Card styling remains the same */
+.card2
+{
+    margin:20px;
+    height:370px;
+    flex: 1;
+}
+
+.card2:nth-child(7) {
+    grid-column: span 2; /* Span across two columns */
+}
+
+.carousel-container {
+    flex: 0 1 40%; /* Carousel takes up 30% of the width, adjust as needed */
+
+    margin-left: 20px;
+
+}
+
+.like-icon {
+    position: absolute; /* Positioning relative to the card */
+    top: 10px; /* Distance from the top */
+    right: 10px;
+     padding:10px;/* Distance from the right */
+}
+
+.like-icon svg {
+    fill: none; /* No fill by default */
+    stroke: black; /* Black outline (stroke) */
+    stroke-width: 1; /* Set the stroke width to make the outline visible */
+    transition: stroke 0.3s ease, fill 0.3s ease; /* Smooth transition for stroke and fill */
+}
+
+.like-icon:hover svg {
+    fill: red; /* Fill the heart with red on hover */
+    stroke: red; /* Change the outline to red on hover */
+}
+
+
+
+
+
+.imgcrl
+{
+height:520px;
+width:100px;
+margin-top:10px;
+border-radius: 20px;
+}
+
+h5
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.img-container1 {
+
+    position: relative; /* So the overlay can be positioned relative to the image */
+    display: inline-block;
+    width: 100%;
+}
+
+.imgf {
+margin-top:20px;
+    height: 300px;
+     /* Adjust as necessary */
+    display: block;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    padding: 40px;
+    margin-top:10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    width:500px;
+}
+
+.email-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.email-form .checkbox-container {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.email-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(42, 42, 99);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.email-form button:hover {
+    background-color: rgb(41, 41, 136);
+}
+.h2f
+{
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.icon-title {
+    display: inline-block; /* Change to inline-block */
+    margin-bottom: 5px; /* Add some space below the icon */
+}
+
+.icon-title svg {
+    display: block; /* Ensure the SVG is treated as a block */
+    margin-bottom: 5px; /* Add space between the icon and title */
+    width: 24px; /* You can adjust the size */
+    height: 24px; /* Adjust the size as needed */
+}
+
+.cardt
+{
+margin-top:20px;
+}
+.no-transition
+{
+    transition: none !important;
+    box-shadow: none !important;
+}
+.no-transition:hover {
+    /* Reset hover effects, if any were defined */
+    transform: none; /* or whatever property you're modifying on hover */
+    box-shadow: none; /* Remove any box-shadow effects on hover */
+    background-color: inherit; /* Reset background color on hover */
+    /* Add any other properties that need to be reset */
+}
+
+.Divwho
+{
+margin-top:20px;
+}
+.fff
+{
+margin-top:20px;
+}
+
+footer {
+    background-color: rgb(42, 42, 99) !important; /* Bootstrap dark background */
+}
+
+footer a {
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+footer a:hover {
+    color: #ffc107; /* Change color on hover */
+}
+
+footer p {
+    margin: 0; /* Remove default margin */
+}
+
+.custom-btn {
+    background-color: rgb(42, 42, 99);
+    color: white; /* Ensure text is readable */
+    font-weight: 500;
+}
+
+.custom-btn:hover {
+    background-color: rgb(90, 90, 147);
+
+}
+
+.filter-icon {
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    background-color: #007bff; /* Bootstrap primary color */
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+.filter-menu {
+    position: fixed;
+    top: 50%; /* Center vertically */
+    right: 20px; /* Align with icon */
+    transform: translateY(-50%); /* Adjust for centering */
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+
+
+/* Media query to adjust layout for smaller screens */
+@media (max-width: 992px) {
+    .divMade2 {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .divMade2 {
+        grid-template-columns: 1fr; /* Single column for small screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .bi-heart, .bi-person, .bi-shop {
+        margin: 20px;
+    }
+
+    .flag-icon img {
+        margin: 10px;
+    }
+
+    /* Ensure Salomon appears in collapsible view as well */
+    .navbar-nav.mx-auto {
+        display: none;
+    }
+
+    .navbar-collapse.show .navbar-nav.mx-auto {
+        display: block;
+        text-align: center;
+    }
+}
